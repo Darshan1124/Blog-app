@@ -1,14 +1,15 @@
 {% extends "blog/base.html"%}
 {% block content %}
-    {% for post in posts %}
-        <article class="media content-section">
-            <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}" style="min-width: 15%; min-height: 10%; max-width: 15%; max-height: 10%;">
+    {{% for post in posts %}
+        <article class="media content-section" style="border: 1px solid #dee2e6; padding: 10px; margin-bottom: 20px; position: relative;">
+            <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}" style="min-width: 14%; min-height: 10%; max-width: 14%; max-height: 10%;">
 
             <div class="media-body">
                 <div class="article-metadata">
                     <a class="mr-2" href="{% url 'user-post' post.author.username %}">{{ post.author }}</a>
                     <small class="text-muted">{{ post.date_posted|date:"F D, Y" }}</small>
                 </div>
+                <hr class="line-break" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 30px; border-top: 1px dashed #dee2e6; z-index: -1;">
                 <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
                 <p class="article-content">{{ post.contents }}</p>
             </div>
