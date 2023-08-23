@@ -1,6 +1,5 @@
 attr
 boto3
-contextlib
 cryptography
 Cython
 Django
@@ -11,7 +10,6 @@ HTMLParser
 ipython
 ipywidgets
 Jinja2
-jnius
 keyring
 lockfile
 mock
@@ -20,10 +18,8 @@ Pillow
 Pillow
 protobuf
 pyOpenSSL
-pywin32ailroad
+ailroad
 Sphinx
 tornado
 trove_classifiers
-truststore
 urllib3_secure_extra
-xmlrpclib
