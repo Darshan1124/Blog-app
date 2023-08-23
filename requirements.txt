@@ -18,7 +18,6 @@ Pillow
 Pillow
 protobuf
 pyOpenSSL
-ailroad
 Sphinx
 tornado
 trove_classifiers
