@@ -1,6 +1,6 @@
 {% extends "blog/base.html"%}
 {% block content %}
-    {{% for post in posts %}
+    {% for post in posts %}
         <article class="media content-section" style="border: 1px solid #dee2e6; padding: 10px; margin-bottom: 20px; position: relative;">
             <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}" style="min-width: 14%; min-height: 10%; max-width: 14%; max-height: 10%;">
 
